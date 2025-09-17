@@ -30,5 +30,24 @@ public class Main {
     System.out.println();
     System.out.println();
     System.out.println("Ok I am done");
+    Integer myInt;
+    Integer myInt2 = 2;
+    Awesome steve = new Awesome("Steve");
+    Awesome sue = new Awesome("Sue");
+    Awesome andrew = new Awesome("Andrew");
+    Awesome john = new Awesome("John");
+    Awesome mark = new Awesome("Mark");
+    Awesome joel = new Awesome("Joel");
+    System.out.println(steve.getName());
+    System.out.println(sue.getName());
+    System.out.println(andrew.getName());
+    System.out.println(john.getName());
+    System.out.println(mark.getName());
+    System.out.println(joel.getName());
+
+    for(myInt = 0; myInt < 9; myInt++){
+      myInt2++;
+      System.out.println(myInt2);
+    }
   }
 }
