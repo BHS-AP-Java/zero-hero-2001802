@@ -44,7 +44,9 @@ public class Main {
     System.out.println(john.getName());
     System.out.println(mark.getName());
     System.out.println(joel.getName());
-
+    steve.learnSomething("That is so cool!");
+    System.out.println(steve.getKnowledge());
+    System.out.println(john.getKnowledge());
     for(myInt = 0; myInt < 9; myInt++){
       myInt2++;
       System.out.println(myInt2);
