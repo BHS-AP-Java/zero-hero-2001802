@@ -14,6 +14,7 @@ public class Main {
 
   // this is an example of a 'char' constant
   // because it is global, it should be in capital letters
+  public static final float MYFLOAT = 69.420f;
   public static final char A = 'a';
 
   public static void main(String[] args) {
