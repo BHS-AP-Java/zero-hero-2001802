@@ -6,19 +6,20 @@ public class Awesome {
   String name;
   String knowledge;
 
-  public Awesome(String name){
+  public Awesome(String name) {
     System.out.println("I am awseome " + name);
     this.name = name;
+  }
 
+  String getName() {
+    return (this.name);
   }
-  String getName(){
-    return(this.name);
-  }
-  void learnSomething(String knowledge){
+
+  void learnSomething(String knowledge) {
     this.knowledge = knowledge;
-
   }
-  String getKnowledge(){
+
+  String getKnowledge() {
     return this.knowledge;
   }
 }

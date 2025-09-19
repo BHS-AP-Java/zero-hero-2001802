@@ -48,7 +48,7 @@ public class Main {
     john.learnSomething("+1 cake");
     System.out.println(steve.getKnowledge());
     System.out.println(john.getKnowledge());
-    for(myInt = 0; myInt < 9; myInt++){
+    for (myInt = 0; myInt < 9; myInt++) {
       myInt2++;
       System.out.println(myInt2);
     }
