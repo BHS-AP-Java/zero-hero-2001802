@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Person",
+      "request": "launch",
+      "mainClass": "edu.bhscs.Person",
+      "projectName": "ap-java-starter"
+    },
+    {
+      "type": "java",
       "name": "Store",
       "request": "launch",
       "mainClass": "edu.bhscs.Store",

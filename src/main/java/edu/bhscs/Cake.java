@@ -2,19 +2,20 @@ package edu.bhscs;
 
 public class Cake {
   // I have to make a constructor
-  int weight;
+  private String flavor;
+  private int weight;
 
-  public Cake(String ingredient, Integer status) {
-
-    System.out.println("what a yummy cake " + ingredient + status);
-    this.weight = 10;
+  public Cake(String flavor, int weight){
+    this.flavor = flavor;
+    this.weight = weight;
   }
 
-  public void eaten() {
-    this.weight = this.weight - 2;
+  public void eaten(){
+    weight -=2;
+    System.out.println("The cake has been eated there is weight of " + weight + " weight left");
   }
 
-  public int getWeight() {
-    return this.weight;
+  public String getFlavor(){
+    return flavor;
   }
 }
