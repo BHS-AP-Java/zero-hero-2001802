@@ -9,6 +9,7 @@ public class Cake {
     this.flavor = flavor;
     this.weight = weight;
   }
+
   public void eaten() {
     weight -= 2;
     System.out.println("The cake has been eated there is weight of " + weight + " weight left");
@@ -18,7 +19,8 @@ public class Cake {
   public String getFlavor() {
     return flavor;
   }
-  public Integer getWeight(){
+
+  public Integer getWeight() {
     return weight;
   }
 }
