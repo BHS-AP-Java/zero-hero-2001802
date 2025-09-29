@@ -14,7 +14,6 @@ public class Cake {
     weight -= 2;
     System.out.println("I eated 2 weight of cake");
     System.out.println("The cake has been eated there is weight of " + weight + " weight left");
-
   }
 
   public String getFlavor() {
