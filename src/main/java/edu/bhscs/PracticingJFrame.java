@@ -3,7 +3,7 @@ package edu.bhscs;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class tictactoe {
+public class PracticingJFrame {
   public static void main(String[] args) {
     JFrame frame = new JFrame("Tic Tac Toe");
     JLabel label = new JLabel("Under Construction");
