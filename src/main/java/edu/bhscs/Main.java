@@ -8,6 +8,9 @@
  * Person buys a cake from a clerk who works at a store for money and then eats the purchased cake
  */
 
+ //constructor
+ //method
+ //fields
 package edu.bhscs;
 
 public class Main {
