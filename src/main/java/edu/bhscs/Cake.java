@@ -2,13 +2,21 @@ package edu.bhscs;
 
 public class Cake {
   // I have to make a constructor
+  Flour myFlour = new Flour();
   public String flavor;
   public int weight;
-
   public Cake(String flavor, int weight) {
     this.flavor = flavor;
     this.weight = weight;
   }
+
+  public void buildCake(){
+    if(myFlour.getQuality() >= 6){
+      if(myFlour.getQuantity() >= 10){
+        weight = myFlour.getWeight();
+      }
+    }
+  };
 
   public void eaten() {
     weight -= 2;

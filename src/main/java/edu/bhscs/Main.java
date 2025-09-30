@@ -8,9 +8,9 @@
  * Person buys a cake from a clerk who works at a store for money and then eats the purchased cake
  */
 
- //constructor
- //method
- //fields
+// constructor
+// method
+// fields
 package edu.bhscs;
 
 public class Main {
@@ -18,6 +18,7 @@ public class Main {
     Clerk myClerk = new Clerk();
     Store myStore = new Store();
     Cake boughtCake = myStore.sellCake();
+    Flour myFlour = new Flour();
 
     myClerk.speaken();
     myClerk.purchaseCake();

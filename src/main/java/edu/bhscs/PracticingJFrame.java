@@ -1,5 +1,4 @@
-
-//works when put in vscode with swing library
+// works when put in vscode with swing library
 
 package edu.bhscs;
 
