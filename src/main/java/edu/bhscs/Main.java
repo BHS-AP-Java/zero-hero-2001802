@@ -19,12 +19,15 @@ public class Main {
     Store myStore = new Store();
     Cake boughtCake = myStore.sellCake();
     PTSA myPTSA = new PTSA();
+    Bakery myBakery = new Bakery();
 
+    myBakery.getCakeQuality();
     myClerk.speaken();
     myClerk.purchaseCake();
+    
     System.out.println(
         "the user has purchased a "
-            + boughtCake.getFlavor()
+            + boughtCake.getQuality()
             + " cake that weighs "
             + boughtCake.getWeight()
             + " weight");

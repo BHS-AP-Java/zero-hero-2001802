@@ -1,8 +1,11 @@
 package edu.bhscs;
 
 public class Flour {
-  public int quality;
-  public int quantity;
+  int flourQuality = (int) (Math.random() * 10) + 1;
+  int flourQuantity = (int) (Math.random() * 50) + 1;
+
+  public int quality = flourQuality;
+  public int quantity = flourQuantity;
 
   public Integer getQuality() {
     return quality;
@@ -10,6 +13,5 @@ public class Flour {
 
   public Integer getQuantity() {
     return quantity;
-  }
-  ;
+  };
 }

@@ -2,23 +2,22 @@ package edu.bhscs;
 
 public class Cake {
   // I have to make a constructor
-  Flour myFlour = new Flour();
-  public String flavor;
+  public String quality;
   public int weight;
 
-  public Cake(String flavor, int weight) {
-    this.flavor = flavor;
+  public Cake(String quality, int weight) {
+    this.quality = quality;
     this.weight = weight;
   }
 
-  public void eaten() {
+  public void eaten(){
     weight -= 2;
     System.out.println("I eated 2 weight of cake");
     System.out.println("The cake has been eated there is weight of " + weight + " weight left");
   }
 
-  public String getFlavor() {
-    return flavor;
+  public String getQuality() {
+    return quality;
   }
 
   public Integer getWeight() {
