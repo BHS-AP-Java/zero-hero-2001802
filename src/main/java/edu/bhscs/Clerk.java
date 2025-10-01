@@ -1,9 +1,9 @@
 package edu.bhscs;
 
-public class Clerk1 {
+public class Clerk {
   public int ClerkCash = 0;
   public int Value = 42;
-  Store1 myStore = new Store1();
+  Store myStore = new Store();
   Cake boughtCake = myStore.sellCake();
 
   public void speaken() {
