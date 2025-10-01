@@ -1,10 +1,10 @@
 package edu.bhscs;
 
-public class Clerk {
+public class Clerk1 {
   public int ClerkCash = 0;
   public int Value = 42;
-  Store myStore = new Store();
-  Cake boughtCake = myStore.sellCake();
+  Store1 myStore = new Store1();
+  Cake1 boughtCake = myStore.sellCake();
 
   public void speaken() {
     System.out.println("cake is for sale at the store currently");

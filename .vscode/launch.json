@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main1",
+      "request": "launch",
+      "mainClass": "edu.bhscs.Main1",
+      "projectName": "ap-java-starter"
+    },
+    {
+      "type": "java",
       "name": "PracticingJFrame",
       "request": "launch",
       "mainClass": "edu.bhscs.PracticingJFrame",

@@ -1,16 +1,17 @@
 package edu.bhscs;
 
-public class Flour {
+public class Flour1 {
   public int weight = 60;
   public int quantity = 20;
   public int price;
   public int quality = 8;
 
-  public void goesBad(){
+  public void goesBad() {
     this.quality = 0;
-  };
+  }
+  ;
 
-  public Integer getWeight(){
+  public Integer getWeight() {
     return weight;
   }
 
