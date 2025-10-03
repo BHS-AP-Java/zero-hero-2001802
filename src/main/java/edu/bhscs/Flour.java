@@ -13,5 +13,6 @@ public class Flour {
 
   public Integer getQuantity() {
     return quantity;
-  };
+  }
+  ;
 }

@@ -8,19 +8,20 @@ public class Bakery {
   Integer bakerSkill = myBaker.getSkill();
   String cakeQuality;
 
-  public Integer getFlourQuantity(){
+  public Integer getFlourQuantity() {
     return flourQuantity;
   }
-  public String getCakeQuality(){
-    if(flourQuality >= 7){
+
+  public String getCakeQuality() {
+    if (flourQuality >= 7) {
       cakeQuality = "good";
-      if(bakerSkill >= 7){
+      if (bakerSkill >= 7) {
         cakeQuality = "great!";
       }
     }
-    if(flourQuality < 7){
+    if (flourQuality < 7) {
       cakeQuality = "bad";
-      if(bakerSkill >=7){
+      if (bakerSkill >= 7) {
         cakeQuality = "good";
       }
     }
