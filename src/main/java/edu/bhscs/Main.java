@@ -22,8 +22,9 @@ public class Main {
 
     String userName = myObj.nextLine(); // Read user input
     System.out.println("Username is: " + userName);
-    myObj.close();// Output user input
-    
+    myObj.close(); // Output user input
+
+    Player myPlayer = new Player();
     Clerk myClerk = new Clerk();
     Store myStore = new Store();
     Cake boughtCake = myStore.sellCake();
@@ -34,12 +35,7 @@ public class Main {
     myClerk.speaken();
     myClerk.purchaseCake();
 
-    System.out.println(
-        userName + " has purchased a "
-            + boughtCake.getQuality()
-            + " cake that weighs "
-            + boughtCake.getWeight()
-            + " weight");
+    myPlayer.buyCake();
 
     boughtCake.eaten();
     System.out.println(myPTSA.donate());
