@@ -1,16 +1,13 @@
 package edu.bhscs;
 
 public class Store {
-  Bakery myBakery = new Bakery();
-  String quality = myBakery.getCakeQuality();
-  Integer flourWeight = myBakery.getFlourQuantity();
+  // properties and fields
 
-  public Cake sellCake() {
-    return new Cake(quality, flourWeight);
-  }
+  // constructor
 
-  public Double getCakeValue() {
-    return (flourWeight * 1.5);
+  // Methods
+  String getName() {
+    return ("My Bakery");
   }
   ;
 }

@@ -1,13 +1,34 @@
 package edu.bhscs;
 
 public class Baker {
-  //not finished creating baker but uses random numbers to determine in part quality of cake
-  int randomInt = (int) (Math.random() * 10) + 1;
-  int temp = randomInt;
 
-  public int skill = randomInt;
+  Player p;
+  Flour f;
+  Store placeOfWork;
+  int cash;
 
-  public Integer getSkill() {
-    return skill;
+  // constructor
+  Baker(Player p) {
+    this.p = p;
+  }
+
+  // methods
+
+  void takeOrder(int price, Customer c) {
+    cash += c.pay(price);
+    c.takeCake(bakeCake());
+  }
+
+  Cake bakeCake() {
+    String answer = this.p.giveAnswer("What cake do you want?");
+    return new Cake(answer, this.f);
+  }
+
+  void takeJob(Store bakery) {
+    String doYouWantToWorkHere = this.p.giveAnswer("Do you want to work at " + bakery.getName());
+    if (doYouWantToWorkHere.equals("y")) {
+      this.placeOfWork = bakery;
+      System.out.println(this.name + " now works at " + bakery.getName());
+    }
   }
 }

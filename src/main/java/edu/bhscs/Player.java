@@ -1,10 +1,22 @@
 package edu.bhscs;
-
+import java.util.Scanner;
 public class Player {
-  Store myStore = new Store();
-  Cake boughtCake = myStore.sellCake();
-  public void buyCake(){
-    System.out.println("User has purchased a " + boughtCake.getQuality()
-        + " cake that weighs " + boughtCake.getWeight() + " weight");
+  // fields and properties
+  String name;
+  Scanner s;
+  // Constructor
+  public Player(String name){
+    this.name = name;
+    this.s = new Scanner(System.in);
+  }
+  // Methods
+  public void answerQuestions(){
+    System.out.println("whats your question?");
+    String question = this.s.next();
+    System.out.println(question + " is a dumb question");
+  }
+  public String giveAnswer(String question){
+    System.out.println(question);
+    return s.nexLine();
   }
 }
