@@ -11,10 +11,9 @@ public class Main {
     Bakery bakery = new Bakery("My bakery");
     PTSA ptsa = new PTSA();
     Flour flour = new Flour("the best flower ever");
-
     Baker baker = new Baker("User", player);
     baker.f = flour;
-    baker.learn(9);
+    baker.learn(4);
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
