@@ -1,10 +1,32 @@
 package edu.bhscs;
 
+// fields and properties
 public class Customer {
-  void pay(){
+  private int money = 50;
+  private Player p;
 
+  // constructor
+  public Customer(Player p) {
+    this.p = p;
   }
-  String takeCake(){
-    return();
+
+  // methods
+  public int pay(int price) {
+    if (money >= price) {
+      money -= price;
+      System.out.println("The customer paid $" + price);
+      return price;
+    } else {
+      System.out.println("Customer is to broke to buy cake ;-;");
+      return 0;
+    }
+  }
+
+  public void takeCake(Cake cake) {
+    System.out.println("Customer received a " + cake.getFlavor() + " cake");
+  }
+
+  public Player getPlayer() {
+    return this.p;
   }
 }

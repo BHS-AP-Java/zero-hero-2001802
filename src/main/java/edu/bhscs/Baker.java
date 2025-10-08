@@ -6,9 +6,11 @@ public class Baker {
   Flour f;
   Store placeOfWork;
   int cash;
+  String name;
 
   // constructor
-  Baker(Player p) {
+  Baker(String name, Player p) {
+    this.name = name;
     this.p = p;
   }
 
@@ -29,6 +31,17 @@ public class Baker {
     if (doYouWantToWorkHere.equals("y")) {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
+    }else{
+      System.out.println(name + " does not want to work at the bakery, oh well, a customer is still buying a cake");
+    }
+  }
+
+  void donateToPTSA(PTSA ptsa, int amount) {
+    if (amount <= cash) {
+      cash -= amount;
+      ptsa.receiveDonation(amount);
+    } else {
+      System.out.println("to broke to donate ;-;");
     }
   }
 }

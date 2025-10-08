@@ -1,13 +1,13 @@
 package edu.bhscs;
 
 public class Store {
-  // properties and fields
+  protected String name;
 
-  // constructor
-
-  // Methods
-  String getName() {
-    return ("My Bakery");
+  public Store(String name) {
+    this.name = name;
   }
-  ;
+
+  public String getName() {
+    return name;
+  }
 }
