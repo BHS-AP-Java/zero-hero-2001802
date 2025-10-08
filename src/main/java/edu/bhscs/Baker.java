@@ -5,8 +5,10 @@ public class Baker {
   Player p;
   Flour f;
   Store placeOfWork;
+  int skill;
   int cash;
   String name;
+  String quality;
 
   // constructor
   Baker(String name, Player p) {
@@ -16,6 +18,22 @@ public class Baker {
 
   // methods
 
+  public void learn(int amount){
+    this.skill += amount;
+  }
+  public String translateSkill(){
+
+    if(skill >= 7){
+      quality = "good";
+    }else{
+      quality = "okay";
+    }
+    if (skill <= 4) {
+      quality = "bad";
+    }
+    return quality;
+
+  }
   void takeOrder(int price, Customer c) {
     cash += c.pay(price);
     c.takeCake(bakeCake());
@@ -23,7 +41,7 @@ public class Baker {
 
   Cake bakeCake() {
     String answer = this.p.giveAnswer("What cake do you want?");
-    return new Cake(answer, this.f);
+    return new Cake(answer, this.f, quality);
   }
 
   void takeJob(Store bakery) {
@@ -31,7 +49,7 @@ public class Baker {
     if (doYouWantToWorkHere.equals("y")) {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
-    }else{
+    } else {
       System.out.println(name + " does not want to work at the bakery, oh well, a customer is still buying a cake");
     }
   }

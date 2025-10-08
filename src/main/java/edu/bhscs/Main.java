@@ -14,6 +14,8 @@ public class Main {
 
     Baker baker = new Baker("User", player);
     baker.f = flour;
+    baker.learn(9);
+    baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
     baker.donateToPTSA(ptsa, 10);

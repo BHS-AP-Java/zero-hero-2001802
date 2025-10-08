@@ -1,7 +1,7 @@
 package edu.bhscs;
 
 public class Store {
-  protected String name;
+  private String name;
 
   public Store(String name) {
     this.name = name;
@@ -11,3 +11,4 @@ public class Store {
     return name;
   }
 }
+

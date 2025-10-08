@@ -2,7 +2,7 @@ package edu.bhscs;
 
 // fields and properties
 public class Customer {
-  private int money = 50;
+  private int money = 20;
   private Player p;
 
   // constructor
@@ -18,12 +18,12 @@ public class Customer {
       return price;
     } else {
       System.out.println("Customer is to broke to buy cake ;-;");
-      return 0;
+      return money;
     }
   }
 
   public void takeCake(Cake cake) {
-    System.out.println("Customer received a " + cake.getFlavor() + " cake");
+    System.out.println("Customer received a " + cake.getFlavor() + " cake that is " + cake.getQuality() + " quality");
   }
 
   public Player getPlayer() {
