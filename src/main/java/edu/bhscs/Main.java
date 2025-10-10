@@ -13,7 +13,7 @@ public class Main {
     Flour flour = new Flour("the best flower ever");
     Baker baker = new Baker("User", player);
     baker.f = flour;
-    baker.learn(4);
+    baker.learn(6);
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);

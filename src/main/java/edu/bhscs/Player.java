@@ -13,9 +13,11 @@ public class Player {
   }
 
   // Methods
-  public void accomplish(int amount){
+  public void accomplish(int amount) {
     this.accomplishments += amount;
-  };
+  }
+  ;
+
   public String giveAnswer(String question) {
     System.out.println(question);
     return scanner.nextLine();

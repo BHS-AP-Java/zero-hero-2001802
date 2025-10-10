@@ -23,7 +23,12 @@ public class Customer {
   }
 
   public void takeCake(Cake cake) {
-    System.out.println("Customer received a " + cake.getFlavor() + " cake that is " + cake.getQuality() + " quality");
+    System.out.println(
+        "Customer received a "
+            + cake.getFlavor()
+            + " cake that is "
+            + cake.getQuality()
+            + " quality");
   }
 
   public Player getPlayer() {

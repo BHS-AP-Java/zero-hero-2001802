@@ -17,7 +17,8 @@ public class Cake {
   public String getFlavor() {
     return flavor;
   }
-  public String getQuality(){
+
+  public String getQuality() {
     return quality;
   }
 }

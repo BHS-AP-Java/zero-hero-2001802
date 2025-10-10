@@ -18,22 +18,23 @@ public class Baker {
 
   // methods
 
-  public void learn(int amount){
+  public void learn(int amount) {
     this.skill += amount;
   }
-  public String translateSkill(){
 
-    if(skill >= 7){
+  public String translateSkill() {
+
+    if (skill >= 7) {
       quality = "good";
-    }else{
+    } else {
       quality = "okay";
     }
     if (skill <= 4) {
       quality = "bad";
     }
     return quality;
-
   }
+
   void takeOrder(int price, Customer c) {
     cash += c.pay(price);
     c.takeCake(bakeCake());
@@ -50,7 +51,9 @@ public class Baker {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
     } else {
-      System.out.println(name + " does not want to work at the bakery, oh well, a customer is still buying a cake");
+      System.out.println(
+          name
+              + " does not want to work at the bakery, oh well, a customer is still buying a cake");
     }
   }
 
