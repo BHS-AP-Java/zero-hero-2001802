@@ -6,6 +6,7 @@ public class Cake {
   private String quality;
   private Flour flour;
 
+
   // constructor
   public Cake(String flavor, Flour flour, String quality) {
     this.flavor = flavor;
