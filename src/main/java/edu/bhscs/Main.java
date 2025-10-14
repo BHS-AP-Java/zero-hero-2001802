@@ -13,7 +13,7 @@ public class Main {
     Flour flour = new Flour("the best flower ever");
     Baker baker = new Baker("User", player);
     CakeDrawer drawCake = new CakeDrawer();
-    drawCake.drawCake(8, 4,5,4);
+    drawCake.drawCake(8, 4, 12, 4);
     baker.f = flour;
     baker.learn(6);
     baker.translateSkill();
