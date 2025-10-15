@@ -12,8 +12,8 @@ public class Main {
     PTSA ptsa = new PTSA();
     Flour flour = new Flour("the best flower ever");
     Baker baker = new Baker("User", player);
-    CakeDrawer drawCake = new CakeDrawer();
-    drawCake.drawCake(8, 4, 12, 4);
+    CakeDrawer myCake = new CakeDrawer();
+    myCake.drawCake(20, 4, 8, 4);
     baker.f = flour;
     baker.learn(6);
     baker.translateSkill();
