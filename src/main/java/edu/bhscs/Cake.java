@@ -24,7 +24,8 @@ public class Cake {
   public String getQuality() {
     return quality;
   }
-  public String getColor(){
+
+  public String getColor() {
     System.out.println(color);
     return color;
   }

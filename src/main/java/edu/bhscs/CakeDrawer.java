@@ -4,7 +4,7 @@ public class CakeDrawer {
   private String candles = "";
 
   public void drawCake(int width, int height, int depth, int cQuantity) {
-    //cakeCandle(width, cQuantity);
+    // cakeCandle(width, cQuantity);
     cakeHWD(width, height, depth);
   }
 
@@ -43,8 +43,8 @@ public class CakeDrawer {
       System.out.println();
     }
 
-    //width/height
-    
+    // width/height
+
     for (int h = 0; h < height; h++) {
       for (int i = 0; i < h; i++) {
         System.out.print(" ");

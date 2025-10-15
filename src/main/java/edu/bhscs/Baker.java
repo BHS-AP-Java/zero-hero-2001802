@@ -42,7 +42,7 @@ public class Baker {
 
   Cake bakeCake() {
     String answer = this.p.giveAnswer("What cake do you want?");
-    return new Cake(answer, this.f, quality, "brown");
+    return new Cake(answer, this.f, quality, " color");
   }
 
   void takeJob(Store bakery) {
