@@ -28,7 +28,7 @@ public class Customer {
             + cake.getFlavor()
             + " cake that is "
             + cake.getQuality()
-            + " quality"
+            + " quality and "
             + cake.getColor());
   }
 

@@ -26,7 +26,7 @@ public class Cake {
   }
 
   public String getColor() {
-    System.out.println(color);
+    color = flavor + " color";
     return color;
   }
 }

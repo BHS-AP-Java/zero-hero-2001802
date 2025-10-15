@@ -42,7 +42,7 @@ public class CakeDrawer {
       }
       System.out.println();
     }
-
+    
     // width/height
 
     for (int h = 0; h < height; h++) {

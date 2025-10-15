@@ -9,6 +9,7 @@ public class Baker {
   int cash;
   String name;
   String quality;
+  String color;
 
   // constructor
   Baker(String name, Player p) {
@@ -39,10 +40,9 @@ public class Baker {
     cash += c.pay(price);
     c.takeCake(bakeCake());
   }
-
   Cake bakeCake() {
     String answer = this.p.giveAnswer("What cake do you want?");
-    return new Cake(answer, this.f, quality, " color");
+    return new Cake(answer, this.f, quality, color);
   }
 
   void takeJob(Store bakery) {
