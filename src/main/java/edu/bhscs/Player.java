@@ -6,6 +6,7 @@ public class Player {
   // fields and properties
   private Scanner scanner;
   int accomplishments;
+  public String question2 = "how wide is your cake?";
 
   // Constructor
   public Player(Scanner scanner) {
@@ -21,5 +22,11 @@ public class Player {
   public String giveAnswer(String question) {
     System.out.println(question);
     return scanner.nextLine();
+  }
+
+  public String getCakeData() {
+    System.out.println(question2);
+    String width = scanner.nextLine();
+    return width;
   }
 }

@@ -40,6 +40,7 @@ public class Baker {
     cash += c.pay(price);
     c.takeCake(bakeCake());
   }
+
   Cake bakeCake() {
     String answer = this.p.giveAnswer("What cake do you want?");
     return new Cake(answer, this.f, quality, color);

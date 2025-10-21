@@ -1,6 +1,7 @@
 package edu.bhscs;
 
 public class CakeDrawer {
+
   private String candles = "";
 
   public void drawCake(int width, int height, int depth, int cQuantity) {
@@ -42,7 +43,7 @@ public class CakeDrawer {
       }
       System.out.println();
     }
-    
+
     // width/height
 
     for (int h = 0; h < height; h++) {
