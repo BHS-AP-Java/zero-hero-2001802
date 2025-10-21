@@ -2,9 +2,10 @@ package edu.bhscs;
 
 public class App{
   public static void main(String[] args) {
-    System.out.println("I am the app");
+    CakeDrawer myCake = new CakeDrawer();
+    myCake.drawCake(10, 5, 5, 4);
+
   }
-  public static void date_10_21(){
-    System.out.println("");
-  }
+
+
 }

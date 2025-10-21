@@ -16,12 +16,14 @@ public class Main {
     data = player.getCakeData();
     int width = Integer.parseInt(data);
     baker.f = flour;
+
     baker.learn(6);
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
-    baker.donateToPTSA(ptsa, 10);
     myCake.drawCake(width, 5, 5, 4);
+    baker.donateToPTSA(ptsa, 10);
+
     scanner.close();
   }
 }
