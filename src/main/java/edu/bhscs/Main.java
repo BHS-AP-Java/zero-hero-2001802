@@ -1,3 +1,13 @@
+// Daniel Langlois
+// BHSCSA Period 2
+// Desc
+// Draws a cake and simulates a customer buying a cake based on changing variables.
+
+
+
+
+
+
 package edu.bhscs;
 
 import java.util.Scanner;

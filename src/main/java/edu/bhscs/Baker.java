@@ -24,7 +24,6 @@ public class Baker {
   }
 
   public String translateSkill() {
-
     if (skill >= 7) {
       quality = "good";
     } else {
