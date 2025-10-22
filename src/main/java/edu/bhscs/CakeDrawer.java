@@ -4,7 +4,7 @@ public class CakeDrawer {
 
   private String candles = "";
 
-  public void drawCake(int width, int height, int depth, int cQuantity) {
+  public void drawCake(int width, int height, int depth) {
     // cakeCandle(width, cQuantity);
     cakeHWD(width, height, depth);
   }

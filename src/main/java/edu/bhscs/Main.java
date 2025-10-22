@@ -13,15 +13,17 @@ public class Main {
     Baker baker = new Baker("User", player);
     CakeDrawer myCake = new CakeDrawer();
     String data;
+    String data2;
     data = player.getCakeData();
     int width = Integer.parseInt(data);
     baker.f = flour;
-
+    data2 = player.getCakeData2();
+    int height = Integer.parseInt(data2);
     baker.learn(6);
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
-    myCake.drawCake(width, 5, 5, 4);
+    myCake.drawCake(width,height, height);
     baker.donateToPTSA(ptsa, 10);
 
     scanner.close();
