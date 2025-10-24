@@ -3,11 +3,6 @@
 // Desc
 // Draws a cake and simulates a customer buying a cake based on changing variables.
 
-
-
-
-
-
 package edu.bhscs;
 
 import java.util.Scanner;
@@ -29,11 +24,12 @@ public class Main {
     baker.f = flour;
     data2 = player.getCakeData2();
     int height = Integer.parseInt(data2);
-    baker.learn(6);
+    int bakerSkill = (int) (Math.random() * 10);
+    baker.learn(bakerSkill);
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
-    myCake.drawCake(width,height, height);
+    myCake.drawCake(width, height, height);
     baker.donateToPTSA(ptsa, 10);
 
     scanner.close();
