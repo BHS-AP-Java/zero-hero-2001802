@@ -1,7 +1,8 @@
 package edu.bhscs;
 
 public class Table {
-  //fields and properties
+  /*make a table with legs that can be spaced apart and can but doesnt necessarily have to be centered on a potential cake
+  fields and properties*/
   int legs;
   int width;
 
@@ -13,4 +14,6 @@ public class Table {
   }
 
   //methods
+
+  public void drawTable()
 }
