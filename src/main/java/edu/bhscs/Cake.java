@@ -27,6 +27,9 @@ public class Cake {
 
   public String getColor() {
     color = flavor + " color";
+    if (flavor == "qwerty"){
+      color = "this cake is not qwerty but instead vanilla and white color";
+    }
     return color;
   }
 }

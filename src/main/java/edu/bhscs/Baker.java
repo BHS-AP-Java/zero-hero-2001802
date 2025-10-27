@@ -12,6 +12,10 @@ public class Baker {
   String color;
 
   // constructor
+  public Baker(String name){
+    this.name = name;
+  }
+
   Baker(String name, Player p) {
     this.name = name;
     this.p = p;
