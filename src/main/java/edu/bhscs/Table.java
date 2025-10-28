@@ -6,14 +6,13 @@ public class Table {
   int legs;
   int width;
 
-  //constructor
-  public Table(int legs, int width){
+  // constructor
+  public Table(int legs, int width) {
     this.legs = legs;
     this.width = width;
-
   }
 
-  //methods
+  // methods
 
-  public void drawTable()
+  public void drawTable() {}
 }
