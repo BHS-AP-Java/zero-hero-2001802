@@ -38,7 +38,9 @@ public class Baker {
     }
     return quality;
   }
-
+  public Cake bakes(int age, String name){
+    return();
+  }
   void takeOrder(int price, Customer c) {
     cash += c.pay(price);
     c.takeCake(bakeCake());
