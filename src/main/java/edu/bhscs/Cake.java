@@ -32,7 +32,6 @@ public class Cake {
     }
     return color;
   }
-  public void draw(Table t){
 
-  }
+  public void draw(Table t) {}
 }
