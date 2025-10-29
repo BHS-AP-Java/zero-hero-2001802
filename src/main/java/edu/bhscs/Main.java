@@ -14,9 +14,10 @@ public class Main {
     Customer customer = new Customer(player);
     Bakery bakery = new Bakery("My bakery");
     PTSA ptsa = new PTSA();
+
     Flour flour = new Flour("the best flower ever");
+    Cake myCake = new Cake("Str", flour,"str","str");
     Baker baker = new Baker("User", player);
-    CakeDrawer myCake = new CakeDrawer();
     String data;
     String data2;
     data = player.getCakeData();

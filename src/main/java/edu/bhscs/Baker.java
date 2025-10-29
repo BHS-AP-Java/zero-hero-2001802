@@ -38,9 +38,11 @@ public class Baker {
     }
     return quality;
   }
-  public Cake bakes(int age, String name){
-    return();
+
+  public Cake bakes(int age, String name) {
+    return new Cake("Flavor", this.f, quality, "Color");
   }
+
   void takeOrder(int price, Customer c) {
     cash += c.pay(price);
     c.takeCake(bakeCake());

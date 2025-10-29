@@ -5,6 +5,7 @@ public class Table {
   fields and properties*/
   int legs;
   int width;
+  String spaces = "";
 
   // constructor
   public Table(int legs, int width) {
@@ -13,21 +14,33 @@ public class Table {
   }
 
   // methods
-  public void drawTable(int legs, int width, int legHeight){
-    for(int w = 0; w < width; w++){
+  public void drawTable(int legs, int width, int legHeight, int center) {
+    for (int c = 0; c < center; c++) {
+      System.out.print(" ");
+    }
+    for (int w = 0; w < width; w++) {
       System.out.print("=");
     }
     System.out.println();
+    for (int c = 0; c < center; c++) {
 
-    for(int h = 0; h < legHeight; h++){
-      for(int w = 0; w < width; w++){
-        for(int i = 0; i < legs; i++){
-          int legX = (int) Math.round(i * (width - 1.0) /(legs - 1));
-          if(w == legX){
+      String space = " ";
+      spaces = spaces.concat(space);
+    }
+    for (int h = 0; h < legHeight; h++) {
+      int centerCopy = center;
+      for (int w = 0; w < width; w++) {
+        for (int i = 0; i < legs; i++) {
+          int legX = (int) Math.round(i * (width - 1.0) / (legs - 1));
+          if (w == legX) {
+            for (int c = 0; c < centerCopy; c++) {
+              System.out.print(spaces);
+              centerCopy = 0;
+            }
             System.out.print("|");
             break;
           }
-          if (i == legs -1){
+          if (i == legs - 1) {
             System.out.print(" ");
           }
         }
@@ -35,5 +48,4 @@ public class Table {
       System.out.println();
     }
   }
-
 }
