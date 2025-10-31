@@ -16,7 +16,7 @@ public class Main {
     PTSA ptsa = new PTSA();
 
     Flour flour = new Flour("the best flower ever");
-    Cake myCake = new Cake("Str", flour,"str","str");
+    Cake myCake = new Cake("Str", flour, "str", "str");
     Baker baker = new Baker("User", player);
     String data;
     String data2;
