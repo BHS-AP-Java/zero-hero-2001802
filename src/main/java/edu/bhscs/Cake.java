@@ -101,6 +101,6 @@ public class Cake {
     Table myTable = new Table(3, 20);
     // this.draw(t);
     int center = width / 2;
-    myTable.drawTable(3, width * 2, 6, center);
+    myTable.drawTable(3, width, 6, center/2);
   }
 }

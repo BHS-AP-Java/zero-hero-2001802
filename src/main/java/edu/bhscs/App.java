@@ -1,9 +1,8 @@
 package edu.bhscs;
-
-import java.util.Scanner;
 public class App {
   public static void main(String[] args) {
-
+    Flour f = new Flour("Good");
+    /*
     Scanner scanner = new Scanner(System.in);
     Cake myCake = new Cake("",this.f,"string","string");
     Player player = new Player(scanner);
@@ -14,8 +13,10 @@ public class App {
     data2 = player.getCakeData2();
     int height = Integer.parseInt(data2);
     myCake.draw(width, height, height);
-
+    */
     //date10_27();
+    Cake myCake = new Cake("",f,"","");
+    myCake.draw(20,5,5);
   }
 
   public static void date10_27() {

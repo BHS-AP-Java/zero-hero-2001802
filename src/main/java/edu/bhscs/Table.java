@@ -26,6 +26,7 @@ public class Table {
 
       String space = " ";
       spaces = spaces.concat(space);
+
     }
     for (int h = 0; h < legHeight; h++) {
       int centerCopy = center;
