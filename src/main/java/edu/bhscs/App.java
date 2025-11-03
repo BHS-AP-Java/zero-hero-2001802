@@ -1,4 +1,5 @@
 package edu.bhscs;
+
 public class App {
   public static void main(String[] args) {
     Flour f = new Flour("Good");
@@ -14,9 +15,9 @@ public class App {
     int height = Integer.parseInt(data2);
     myCake.draw(width, height, height);
     */
-    //date10_27();
-    Cake myCake = new Cake("",f,"","");
-    myCake.draw(20,5,5);
+    date10_27();
+    //Cake myCake = new Cake("", f, "", "");
+    //myCake.draw(20, 5, 5);
   }
 
   public static void date10_27() {
@@ -24,6 +25,7 @@ public class App {
     Baker bob = new Baker("Bob");
     Table t = new Table(3, 199);
     Cake bDay = bob.bakes(5, "Suzzie");
+    //looks bad if depth != height
     bDay.draw(20, 5, 5);
   }
 }

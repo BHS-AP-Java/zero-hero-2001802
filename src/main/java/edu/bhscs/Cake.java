@@ -99,8 +99,8 @@ public class Cake {
 
   public void drawTable(int width, int height, int depth) {
     Table myTable = new Table(3, 20);
-    // this.draw(t);
+    //this.draw(t);
     int center = width / 2;
-    myTable.drawTable(3, width, 6, center/2);
+    myTable.drawTable(3, width*2, 6, center/2);
   }
 }
