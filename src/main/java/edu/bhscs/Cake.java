@@ -6,6 +6,7 @@ public class Cake {
   private String quality;
   private Flour flour;
   private String color;
+  private int leg;
 
   // constructor
   public Cake(String flavor, Flour flour, String quality, String color) {
@@ -101,6 +102,6 @@ public class Cake {
     Table myTable = new Table(3, 20);
     //this.draw(t);
     int center = width / 2;
-    myTable.drawTable(3, width*2, 6, center/2);
+    myTable.drawTable(leg, width*2, 6, center/2);
   }
 }
