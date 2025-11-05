@@ -28,6 +28,7 @@ public class App {
     Cake bDay = bob.bakes(5, "Suzzie");
     String legChar = t.setLegChar("|");
     int cakeOffset = bDay.centeringMath(t);
-    bDay.draw(t,50,5,cakeOffset,legChar);
+    int width = 20;
+    bDay.draw(t,width,width/2,cakeOffset,legChar);
   }
 }
