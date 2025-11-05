@@ -19,7 +19,7 @@ public class App {
     date10_27();
     // Cake myCake = new Cake("", f, "", "");
     // myCake.draw(20, 5, 5);
-    
+
   }
 
   public static void date10_27() {
@@ -29,6 +29,6 @@ public class App {
     String legChar = t.setLegChar("|");
     int cakeOffset = bDay.centeringMath(t);
     int width = 20;
-    bDay.draw(t,width,width/2,cakeOffset,legChar);
+    bDay.draw(t, width, width / 2, cakeOffset, legChar);
   }
 }

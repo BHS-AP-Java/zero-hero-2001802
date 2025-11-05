@@ -39,9 +39,9 @@ public class Cake {
 
   private String candles = "";
 
-  public void drawCake(int width, int height, int depth,int cakeOffset) {
+  public void drawCake(int width, int height, int depth, int cakeOffset) {
     // cakeCandle(width, cQuantity);
-    
+
     cakeHWD(width, height, depth, cakeOffset);
   }
 
@@ -63,11 +63,11 @@ public class Cake {
   public void cakeHWD(int width, int height, int depth, int cakeOffset) {
 
     // depth
-    
+
     for (int d = 0; d < depth; d++) {
-      for(int c = 0; c < cakeOffset - ((width/2) + depth); c++){
-      System.out.print(" ");
-     }
+      for (int c = 0; c < cakeOffset - ((width / 2) + depth); c++) {
+        System.out.print(" ");
+      }
       for (int i = 0; i < depth - d - 1; i++) {
         System.out.print(" ");
       }
@@ -85,8 +85,8 @@ public class Cake {
     // width/height
 
     for (int h = 0; h < height; h++) {
-      for(int c = 0; c < cakeOffset - ((width/2) + depth); c++){
-      System.out.print(" ");
+      for (int c = 0; c < cakeOffset - ((width / 2) + depth); c++) {
+        System.out.print(" ");
       }
       for (int i = 0; i < h; i++) {
         System.out.print(" ");
@@ -108,8 +108,8 @@ public class Cake {
     int center = width / 2;
     leg = t.legs;
     int twidth = t.width;
-    
-    myTable.drawTable(leg, twidth, 6, center / 2,legChar);
+
+    myTable.drawTable(leg, twidth, 6, center / 2, legChar);
   }
 
   public int centeringMath(Table t) {
@@ -130,10 +130,10 @@ public class Cake {
     return cakeOffset;
   }
 
-  public void draw(Table t,int width, int height, int cakeOffset,String legChar) {
-    
+  public void draw(Table t, int width, int height, int cakeOffset, String legChar) {
+
     drawCake(width, height, height, cakeOffset);
-    
+
     drawTable(t, legChar);
   }
 }

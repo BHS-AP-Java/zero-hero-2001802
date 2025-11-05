@@ -15,13 +15,14 @@ public class Table {
   }
 
   // methods
-  public String setLegChar(String input){
+  public String setLegChar(String input) {
     legChar = input;
     System.out.println(legChar);
     return legChar;
   }
+
   public void drawTable(int legs, int width, int legHeight, int center, String legChar) {
-    
+
     for (int c = 0; c < center; c++) {
       System.out.print(" ");
     }

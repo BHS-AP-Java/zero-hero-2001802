@@ -30,7 +30,7 @@ public class Main {
     baker.translateSkill();
     baker.takeJob(bakery);
     baker.takeOrder(10, customer);
-    myCake.drawCake(width, height, height, width/2);
+    myCake.drawCake(width, height, height, width / 2);
     baker.donateToPTSA(ptsa, 10);
 
     scanner.close();
