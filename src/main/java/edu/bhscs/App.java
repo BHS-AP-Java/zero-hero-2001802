@@ -2,10 +2,11 @@ package edu.bhscs;
 
 public class App {
   public static void main(String[] args) {
-    Flour f = new Flour("Good");
     /*
+    Flour f = new Flour("Good");
+
     Scanner scanner = new Scanner(System.in);
-    Cake myCake = new Cake("",this.f,"string","string");
+    Cake myCake = new Cake("",f,"string","string");
     Player player = new Player(scanner);
     String data;
     String data2;
@@ -16,16 +17,17 @@ public class App {
     myCake.draw(width, height, height);
     */
     date10_27();
-    //Cake myCake = new Cake("", f, "", "");
-    //myCake.draw(20, 5, 5);
+    // Cake myCake = new Cake("", f, "", "");
+    // myCake.draw(20, 5, 5);
+    
   }
 
   public static void date10_27() {
-
     Baker bob = new Baker("Bob");
-    Table t = new Table(3, 199);
+    Table t = new Table(3, 12);
     Cake bDay = bob.bakes(5, "Suzzie");
-    //looks bad if depth != height
-    bDay.draw(20, 5, 5);
+
+    int center = t.width/2;
+    bDay.draw(t,5,5,center);
   }
 }

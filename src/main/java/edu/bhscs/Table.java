@@ -48,4 +48,8 @@ public class Table {
       System.out.println();
     }
   }
+
+  public int getWidth() {
+    return this.width;
+  }
 }

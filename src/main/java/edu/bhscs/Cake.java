@@ -7,6 +7,7 @@ public class Cake {
   private Flour flour;
   private String color;
   private int leg;
+  int width;
 
   // constructor
   public Cake(String flavor, Flour flour, String quality, String color) {
@@ -15,6 +16,8 @@ public class Cake {
     this.flour = flour;
     this.color = color;
   }
+
+  // code needs serious refactoring becasue it is really bad and needs to improve as soon as possib
 
   // methods
 
@@ -34,16 +37,11 @@ public class Cake {
     return color;
   }
 
-  public void draw(int width, int height, int depth) {
-    drawCake(width, height, depth);
-    drawTable(width, height, depth);
-  }
-
   private String candles = "";
 
-  public void drawCake(int width, int height, int depth) {
+  public void drawCake(int width, int height, int depth,int center) {
     // cakeCandle(width, cQuantity);
-    cakeHWD(width, height, depth);
+    cakeHWD(width, height, depth, center);
   }
 
   public void cakeCandle(int width, int cQuantity) {
@@ -61,12 +59,14 @@ public class Cake {
     System.out.println(candles);
   }
 
-  public void cakeHWD(int width, int height, int depth) {
+  public void cakeHWD(int width, int height, int depth, int center) {
 
     // depth
-
+    
     for (int d = 0; d < depth; d++) {
-
+      for(int c = 0; c < center - (width/2); c++){
+      System.out.print(" ");
+     }
       for (int i = 0; i < depth - d - 1; i++) {
         System.out.print(" ");
       }
@@ -84,6 +84,9 @@ public class Cake {
     // width/height
 
     for (int h = 0; h < height; h++) {
+      for(int c = 0; c < center - (width/2); c++){
+      System.out.print(" ");
+      }
       for (int i = 0; i < h; i++) {
         System.out.print(" ");
       }
@@ -98,10 +101,36 @@ public class Cake {
     }
   }
 
-  public void drawTable(int width, int height, int depth) {
+  public void drawTable(Table t) {
     Table myTable = new Table(3, 20);
-    //this.draw(t);
+    // this.draw(t);
     int center = width / 2;
-    myTable.drawTable(leg, width*2, 6, center/2);
+    leg = t.legs;
+    int twidth = t.width;
+    
+    myTable.drawTable(leg, twidth, 6, center / 2);
+  }
+
+  void centeringMath(Table t) {
+    // MATH CHUNK OF CODE....
+    int cakeWidth = this.width;
+    int tableWidth = t.getWidth();
+    int offset = (cakeWidth - tableWidth) / 2;
+    int cakeOffset = 0;
+    int tableOffset = 0;
+
+    if (cakeWidth > tableWidth) {
+      tableOffset = Math.abs(offset);
+      cakeOffset = 0;
+    } else {
+      cakeOffset = Math.abs(offset);
+      tableOffset = 0;
+    }
+  }
+
+  public void draw(Table t,int width, int height, int center) {
+    drawCake(width, height, height, center);
+    
+    drawTable(t);
   }
 }
