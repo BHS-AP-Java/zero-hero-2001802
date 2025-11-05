@@ -5,7 +5,8 @@ public class Table {
   fields and properties*/
   int legs;
   int width;
-  String spaces = "";
+  String legChar = "";
+  String spaces = "|";
 
   // constructor
   public Table(int legs, int width) {
@@ -14,7 +15,13 @@ public class Table {
   }
 
   // methods
-  public void drawTable(int legs, int width, int legHeight, int center) {
+  public String setLegChar(String input){
+    legChar = input;
+    System.out.println(legChar);
+    return legChar;
+  }
+  public void drawTable(int legs, int width, int legHeight, int center, String legChar) {
+    
     for (int c = 0; c < center; c++) {
       System.out.print(" ");
     }
@@ -37,7 +44,7 @@ public class Table {
               System.out.print(spaces);
               centerCopy = 0;
             }
-            System.out.print("|");
+            System.out.print(legChar);
             break;
           }
           if (i == legs - 1) {

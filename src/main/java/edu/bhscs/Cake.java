@@ -39,9 +39,10 @@ public class Cake {
 
   private String candles = "";
 
-  public void drawCake(int width, int height, int depth,int center) {
+  public void drawCake(int width, int height, int depth,int cakeOffset) {
     // cakeCandle(width, cQuantity);
-    cakeHWD(width, height, depth, center);
+    
+    cakeHWD(width, height, depth, cakeOffset);
   }
 
   public void cakeCandle(int width, int cQuantity) {
@@ -59,12 +60,12 @@ public class Cake {
     System.out.println(candles);
   }
 
-  public void cakeHWD(int width, int height, int depth, int center) {
+  public void cakeHWD(int width, int height, int depth, int cakeOffset) {
 
     // depth
     
     for (int d = 0; d < depth; d++) {
-      for(int c = 0; c < center - (width/2); c++){
+      for(int c = 0; c < cakeOffset - ((width/2) + depth); c++){
       System.out.print(" ");
      }
       for (int i = 0; i < depth - d - 1; i++) {
@@ -84,7 +85,7 @@ public class Cake {
     // width/height
 
     for (int h = 0; h < height; h++) {
-      for(int c = 0; c < center - (width/2); c++){
+      for(int c = 0; c < cakeOffset - ((width/2) + depth); c++){
       System.out.print(" ");
       }
       for (int i = 0; i < h; i++) {
@@ -101,17 +102,17 @@ public class Cake {
     }
   }
 
-  public void drawTable(Table t) {
+  public void drawTable(Table t, String legChar) {
     Table myTable = new Table(3, 20);
     // this.draw(t);
     int center = width / 2;
     leg = t.legs;
     int twidth = t.width;
     
-    myTable.drawTable(leg, twidth, 6, center / 2);
+    myTable.drawTable(leg, twidth, 6, center / 2,legChar);
   }
 
-  void centeringMath(Table t) {
+  public int centeringMath(Table t) {
     // MATH CHUNK OF CODE....
     int cakeWidth = this.width;
     int tableWidth = t.getWidth();
@@ -126,11 +127,13 @@ public class Cake {
       cakeOffset = Math.abs(offset);
       tableOffset = 0;
     }
+    return cakeOffset;
   }
 
-  public void draw(Table t,int width, int height, int center) {
-    drawCake(width, height, height, center);
+  public void draw(Table t,int width, int height, int cakeOffset,String legChar) {
     
-    drawTable(t);
+    drawCake(width, height, height, cakeOffset);
+    
+    drawTable(t, legChar);
   }
 }

@@ -24,10 +24,10 @@ public class App {
 
   public static void date10_27() {
     Baker bob = new Baker("Bob");
-    Table t = new Table(3, 12);
+    Table t = new Table(3, 100);
     Cake bDay = bob.bakes(5, "Suzzie");
-
-    int center = t.width/2;
-    bDay.draw(t,5,5,center);
+    String legChar = t.setLegChar("|");
+    int cakeOffset = bDay.centeringMath(t);
+    bDay.draw(t,50,5,cakeOffset,legChar);
   }
 }
