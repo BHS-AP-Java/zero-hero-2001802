@@ -24,7 +24,7 @@ public class App {
 
   public static void date10_27() {
     Baker bob = new Baker("Bob");
-    Table t = new Table(3, 100);
+    Table t = new Table(8, 100);
     Cake bDay = bob.bakes(5, "Suzzie");
     String legChar = t.setLegChar("|");
     int cakeOffset = bDay.centeringMath(t);
